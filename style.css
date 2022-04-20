@@ -1,0 +1,998 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.body{
+    background-color: #171e27;
+    color: #fff;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+/* AUDIO IN PAGE */
+audio{
+    position: absolute;
+    width: .7cm;
+    height: .7cm;
+    opacity: 0;
+}
+.audio{
+    background-color: #fff;
+    width: 2cm;
+    color: #000;
+    position: absolute;
+    margin-top: -.8cm;
+    margin-left: -.4cm;
+    padding: 1px;
+    font-family: sans-serif;
+    border-radius: 12px;
+    display: none;
+}
+/*  */
+hr{
+    margin: 2cm auto;
+    width: 60%;
+    border: 3px solid #fff;
+    background-color: #fff;
+    border-radius: 50%;
+}
+/* LOADING */
+.loading{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #171e27;
+    z-index: -5;
+    opacity: 0;
+    text-align: center;
+    font-family: monospace;
+    font-size: 25px;
+    animation: loading 5s 1 linear;
+    transition: all 0s;
+}
+.loading .p1{
+    margin-top: 40vh;
+    margin-bottom: 30px;
+}
+.loading .p2{
+    width: 70%;
+    margin: 0 auto;
+    border: 4px solid #2570d3;
+    border-radius: 20px;
+    animation: load 2s infinite linear;
+}
+.fa-person-running{
+    animation: run 1s infinite linear;
+}
+@keyframes loading{
+    from{
+        opacity: 3;
+        z-index: 25;
+    }
+    to{
+        opacity: 0;
+        z-index: -5;
+    }
+}
+@keyframes load{
+    0%,100%{
+        width: 70%;
+    }
+    50%{
+        width: 30%;
+    }
+}
+@keyframes run{
+    0%,100%{
+        transform: rotate(-15deg);
+    }
+    50%{
+        transform: rotate(3deg);
+    }
+}
+/* TITLE OF PAGES DESGIN */
+.about-title,
+.experience-title,
+.offer-title,
+.works-title,
+.contact-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1cm;
+}
+/* Up */
+.up{
+    position: fixed;
+    top: 90vh;
+    left: .7cm;
+    font-size: 22px;
+    display: none;
+    cursor: pointer;
+    animation: up 2s 2 linear;
+}
+.A-up{
+    color: #fff;
+}
+@keyframes up{
+    0%,100%{
+
+    }
+    50%{
+        top: 88vh;
+    }
+}
+/* ________BAR________________________________________ */
+.bar{
+    position: absolute;
+    width: 100%;
+    background-color: #121a23;
+    text-align: center;
+    padding: 30px 0;
+    top: -7cm;
+    transition: all .7s ;
+}
+.bar p{
+    margin-bottom: 30px;
+    font-family: sans-serif;
+}
+.bar p .fa-angles-right{
+    color: #fff;
+    margin-left: 15px;
+}
+.bar p .fa-angles-left{
+    color: #fff;
+    margin-right: 15px;
+}
+.bar a{
+    color: #4d8fe6;
+    display: flex;
+    justify-content: center;
+}
+.bar a:hover{
+    color:#fff
+}
+/* btn close bar */
+.close-bar {
+    font-size:25px;
+    cursor: pointer;
+    display: none;
+}
+/* _______HEADER______________________________________ */
+header{
+    height: 1.8cm;
+    background-color: #121a23;
+    align-items: center;
+    padding:0 15%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    box-shadow: 0 1px 20px #fff;
+    position: sticky;
+    top: .1px;
+    z-index: 3;
+    transition: all .3s;
+}
+header ul{
+    display: flex;
+}
+header ul li{
+    list-style-type: none;
+    padding:0px 5px;
+}
+header ul a{
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 7px;
+    transition: all .3s;
+}
+header ul a:hover{
+    background-color: #2570d3;
+}
+header .active{
+    background-color: #2570d3;
+}
+header .mood-logo{
+    display: flex;
+    align-items: center;
+}
+header .mood-logo p{
+    margin-left: 20px;
+    font-size: 20px;
+}
+header .mood-logo span{
+    color: #4d8fe6;
+    font-size: 23px;
+}
+header .mood-logo .s1{
+    animation: span 2s infinite linear;
+    transition: all 2s;
+}
+@keyframes span{
+    0%,100%{
+    }
+    50%{
+        color: #fff;
+    }
+}
+/* sun and moon */
+header .mood-logo .fa-sun-plant-wilt,
+header .mood-logo .fa-cloud-moon{
+    font-size: 20px;
+    cursor: pointer;
+}
+header #moon{
+    display: none;
+}
+/* ________BAR-ICON  */
+header .bar-icon{
+    display:none ;
+    font-size: 22px;
+    cursor: pointer;
+}
+/*________HOME________________________________________*/
+main{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 19vh;
+    line-height: 1.4;
+}
+main input{
+    padding: 7px 15px;
+    margin:0 10px;
+    margin-top: 20px;
+    border-radius: 7px;
+    background-color: #2570d3;
+    border: 1px solid #2570d3;
+    color: #fff;
+    animation: btn1 2s infinite linear;
+    cursor: pointer;
+}
+@keyframes btn1{
+    from{
+    }
+    to{
+        box-shadow: 0 0px 20px #2570d3
+    }
+}
+main .btn1{
+    background-color: #1c2733;
+    animation: none;
+}
+main input:hover{
+    background-color: #2570d3;
+}
+main .home{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+main .box{
+    width: 5.1cm;
+    height: 7.1cm;
+    margin: 0 auto;
+    margin-top: 13vh;
+    border-radius: 25cm 25cm 0 0;
+    background-image: linear-gradient(to bottom,#0d5dc5,#26599c,#26599c,#1c2733);
+    border: 1px solid #2570d3;
+}
+main .box img{
+    width: 5cm;
+    border-radius: 25cm 25cm 0 0;
+}
+/*ITEMS LEFT AND RIGHT IN PAGE HOME */
+main .items-left{
+    display: flex;
+    flex-direction: column;
+    width: 1cm;
+}
+.fa-instagram,
+.fa-linkedin-in,
+.fa-facebook-f,
+.fa-whatsapp,
+.fa-computer-mouse-scrollwheel{
+    padding: 5px;
+    margin-bottom: 3px;
+    background-color: #171e27;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    transition: all .3s;
+}
+.fa-instagram:hover,
+.fa-linkedin-in:hover,
+.fa-facebook-f:hover,
+.fa-whatsapp:hover,
+.fa-computer-mouse-scrollwheel:hover{
+    background-color: #2570d3;
+    padding-left: 20px;
+}
+.items-right{
+    width: 1cm;
+}
+/*______________________________________________ANIMATION BALL________________________________________________  */
+.ball{
+    position: absolute;
+    font-size: 20px;
+    transition: all 3s;
+    z-index: -1;
+}
+.ball1{
+    animation: ball1 10s infinite linear;
+}
+@keyframes ball1{
+    0%,100%{
+        left: 0;
+        top: 1.8cm;
+        color: red;
+    }
+    25%{
+        top: 30vh;
+        left: 30%;
+        transform: rotate(360deg);
+    }
+}
+.ball2{
+    animation: ball2 10s infinite linear;
+}
+@keyframes ball2{
+    0%,100%{
+        left: 0;
+        top: 1.8cm;
+        color: orange;
+    }
+    25%{
+        top: 40vh;
+        left: 27%;
+        transform: rotate(360deg);
+    }
+}
+.ball3{
+    animation: ball3 10s infinite linear;
+}
+@keyframes ball3{
+    0%,100%{
+        left: 0;
+        top: 1.8cm;
+        color: darkmagenta;
+    }
+    25%{
+        top: 50vh;
+        left: 24%;
+        transform: rotate(360deg);
+    }
+}
+.ball4{
+    animation: ball4 10s infinite linear;
+}
+@keyframes ball4{
+    0%,100%{
+        left: 0;
+        top: 1.8cm;
+        color: aqua;
+    }
+    25%{
+        top: 60vh;
+        left: 21%;
+        transform: rotate(360deg);
+    }
+}
+/* ============WHEN CLICK BTN ABOUT ME=============== */
+.aboutBTN{
+    background-color: #171e27f7;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    z-index: -5;
+    transition: all 1s;
+    opacity: 0;
+    overflow-y: scroll;
+}
+.aboutBTN::-webkit-scrollbar{
+    width: .1px;
+}
+.aboutBTN section{
+    width: 8cm;
+    height: 7cm;
+    background-color: #121a23;
+    margin: 1cm auto;
+    margin-top: 32vh;
+    border-radius: 7px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.548);
+    text-align: center;
+    line-height: 1.7;
+    padding:0 20px;
+}
+.aboutBTN section h3{
+    padding-top: 45px;
+}
+.aboutBTN section span{
+    color: #4d8fe6;
+}
+.close1,
+.close2,
+.close3,
+.close4{
+    position: absolute;
+    margin-left: 6.5cm;
+    margin-top: 10px;
+    font-size: 22px;
+    cursor: pointer;
+    transition: all 2s;
+}
+.aboutBTN .close1:hover,
+.product .close2:hover,
+.visual .close3:hover,
+.ui .close4:hover{
+    transform: rotate(360deg);
+}
+/* _____________ABOUT PAGE_____________________________________________ */
+.about-title h3{
+    padding: 0 1cm;
+}
+.fa-angles-left,
+.fa-angles-right{
+    color: #0d5dc5;
+}
+.fa-angles-left{
+    animation: arrowleft 1s infinite linear;
+}
+@keyframes arrowleft{
+    0%,100%{
+    }
+    50%{
+        margin-right: 20px;
+    }
+}
+.fa-angles-right{
+    animation: arrowright 1s infinite linear;
+}
+@keyframes arrowright{
+    0%,100%{
+    }
+    50%{
+        margin-left: 20px;
+    }
+}
+.about{
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    align-items: center;
+}
+.about img{
+    width: 250px;
+    border-radius: 10px;
+    cursor: pointer;
+    border-top: 2px solid #0d5dc5;
+    border-bottom: 2px solid #0d5dc5;
+    animation: imgabout 3s linear infinite;
+}
+@keyframes imgabout{
+    0%,100%{
+    }
+    50%{
+        box-shadow: -5px 0 20px #4d8fe6;
+    }
+}
+.about .threeboxes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+.about .threeboxes section{
+    text-align: center;
+    line-height: 1.5;
+    background-color: #121a23;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #4d8fe637;
+    margin-right: 7px;
+    margin-bottom: 20px;
+    padding: 7px;
+    color: #fff;
+}
+.about p{
+    font-size: 14px;
+    color: antiquewhite;
+}
+.about button{
+    padding: 5px 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    background-color: #2570d3;
+}
+.about button:hover{
+    background-color: #0d5dc5;
+}
+/* ______________________________________EXPERIENCE PAGE___________ */
+.experience-title h3{
+    padding: 0 1cm;
+}
+.experience{
+    width: 70%;
+    margin: 0 auto;
+}
+.experience section{
+    display: flex;
+    font-size: 14px;
+}
+.experience section h3{
+    padding-right: 1cm;
+    width: 3cm;
+}
+.progress{
+    width: 100%;
+    margin-bottom: .7cm;
+}
+/* ______________________________________OFFER PAGE */
+.offer-title h3{
+    padding: 0 1cm;
+}
+.offer{
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+.offer section{
+    background-color: red;
+    margin: 0 auto;
+    padding: 30px 10px 25px 10px;
+    line-height: 1.3;
+    width: 3.3cm;
+    background-color: #121a23;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #4d8fe637;
+    margin-bottom: 1cm;
+    color: #fff;
+}
+.offer section:hover{
+    box-shadow: 0 0 15px #4d8fe669;
+}
+.offer section p{
+    margin-top: 20px;
+    color: #4d8fe6;
+    cursor: pointer;
+}
+.offer section p:hover{
+    color: blueviolet;
+}
+/* DESGIN 3 BOXES IN OFFER PAGE */
+.product,.visual,.ui{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #121a23d4;
+    z-index: -5;
+    opacity: 0;
+    transition: all .7s;
+    overflow-y: scroll;
+}
+.product::-webkit-scrollbar{
+    width: .1px;
+}
+.visual::-webkit-scrollbar{
+    width: .1px;
+}
+.ui::-webkit-scrollbar{
+    width: .1px;
+}
+.product section,
+.visual section,
+.ui section{
+    width: 8cm;
+    height: 9cm;
+    background-color: #121a23;
+    box-shadow: 0 0 20px #0d5dc5;
+    border-radius: 10px;
+    margin: 1cm auto;
+    margin-top: 25vh;
+    padding: 10px;
+}
+.product section .title,
+.visual section .title,
+.ui section .title{
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 30px;
+}
+.product section h3,
+.visual section h3,
+.ui section h3{
+    color: #4d8fe6;
+}
+.product section .title p,
+.visual section .title p,
+.ui section .title p{
+    color: antiquewhite;
+    font-size: 15px;
+    margin-bottom: 1cm;
+    margin-top: 15px;
+    margin-left: 0;
+}
+.product p,
+.visual p,
+.ui p{
+    margin-left: 10px;
+    color: #fff;
+}
+.product .fa-check,
+.visual .fa-check,
+.ui .fa-check{
+    color: rgb(255, 217, 171);
+    margin-right: 4px;
+}
+/* ________________________________WORKS PAGE ___________________________ */
+.works-title h3{
+    padding: 0 1cm;
+}
+.items-work{
+    display: flex;
+    justify-content: center;
+    margin: 1.2cm 0;
+}
+.items-work p{
+    padding: 5px 15px;
+    border-radius: 7px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.items-work p:hover{
+    background-color: #2570d3;
+}
+.items-work .pall{
+    background-color: #2570d3;
+}
+.works{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    transition: all 4s ease-in-out;
+}
+.works section,
+.boxes section{
+    width: 7cm;
+    padding: 17px 5px;
+    background-color: #121a23;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #4d8fe637;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-bottom: 1cm;
+}
+.works section:hover,
+.boxes section:hover{
+    box-shadow: 0 0 20px #2570d388;
+}
+.works section img,
+.boxes section img{
+    width: 220px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: all 2s;
+}
+.works section img:hover{
+    transform: scale(90%);
+}
+.works section .p1,
+.boxes section .p1{
+    font-size: 18px;
+    color: rgb(255, 207, 148);
+    margin-bottom: 10px;
+    text-align: left;
+    margin-left: 15px;
+}
+.works section .p2,
+.boxes section .p2{
+    text-align: left;
+    margin-left: 15px;
+    align-items: center;
+}
+.works section .p2:hover
+,.boxes section .p2:hover{
+    color: #4d8fe6;
+}
+.works .a-view,
+.boxes .a-view{
+    color: #fff;
+}
+.btn-work-page{
+    text-align: center;
+}
+.btn-work-page button{
+    padding: 7px 40px ;
+    border: 1px solid #26599c;
+    background-color: #4d8fe6;
+    color: #fff;
+    font-family: sans-serif;
+    border-radius: 0 20px;
+    cursor: pointer;
+}
+.btn-work-page button:active{
+    padding:7px 50px;
+}
+.btn-work-page button:hover{
+    background-color: #1454a8;
+}
+/* _____________MORE WORKS PAGE____________ */
+.more-works{
+    position: fixed;
+    background-color: #171e27;
+    width: 100%;
+    height: 100vh;
+    z-index: 5;
+    text-align: center;
+    padding: .5cm;
+    padding-bottom: 0;
+    opacity: 0;
+    z-index: -5;
+    transition: all 1s ease;
+    overflow-y: scroll;
+}
+.more-works::-webkit-scrollbar{
+    background-color: #171e27;
+    width: 1px;
+}
+.more-works .close5{
+    position: absolute;
+    margin-left: cm;
+    font-size: 35px;
+    transition: all 2s;
+    cursor: pointer;
+}
+.more-works .close5:hover{
+    transform: rotate(360deg);
+}
+.more-works .title p{
+    color: bisque;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.more-works .boxes{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* _____________________CONTACT PAGE_______________________________ */
+.contact-title h3{
+    padding: 0 1cm;
+}
+.contact{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    width: 70%;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+}
+.contact .left p{
+    color: #4d8fe6;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.contact .left div {
+    font-size: 28px;
+}
+.contact .fa-facebook-square{
+    color: #0d5dc5;
+    cursor: pointer;
+}
+.contact .fa-whatsapp-square{
+    color: rgb(41, 204, 41);
+    cursor: pointer;
+}
+.contact .fa-instagram-square{
+    color: orange;
+    cursor: pointer;
+}
+.contact .fa-linkedin,
+.contact .fa-line,
+.contact .fa-facebook-messenger
+    {
+    color: hsl(214, 71%, 64%);
+    cursor: pointer;
+}
+.contact .right form{
+    background-color: #121a23;
+    width: 70%;
+    padding: 1cm 0;
+    box-shadow: 0 0 10px #4d8fe637;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 1cm;
+}
+form input,
+form textarea,
+form button{
+    padding: 7px 10px ;
+    border: none;
+    border-radius:0 0 0 20px;
+    border-bottom: 1px solid #0d5dc5;
+    outline: none;
+    margin-bottom: 7px;
+    background-color: #171e27;
+    color: #fff;
+    width: 90%;
+}
+form textarea{
+    height: 5cm;
+    margin-bottom: 15px;
+}
+::placeholder{
+    color: rgb(208, 206, 206);
+    font-family: monospace;
+}
+form button{
+    width: 3cm;
+    display: flex;
+    margin-left: 5%;
+    cursor: pointer;
+}
+form button:active{
+    width: 3.5cm;
+}
+form button:hover{
+    background-color: #1454a8;
+    color: #fff;
+}
+/* _______________________FOOTER__________________ */
+footer{
+    margin: 0 auto;
+    background-color: #121a23;
+    text-align: center;
+    padding: 1cm ;
+    padding-bottom: 0;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.064);
+}
+footer iframe{
+    width: 70%;
+    height: 3cm;
+    margin-bottom: 1cm;
+    border-radius: 10px;
+}
+footer p{
+    padding: 1cm;
+}
+.footer{
+    height: 1.8cm;
+    background-color: #121a23;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* MEDIA RESPONSIVE______________________________________________________ */
+@media(max-width:1180px){
+    .works{
+        grid-template-columns: 1fr 1fr ;
+    }
+}
+@media(max-width:930px){
+    header ul{
+        display: none;
+    }
+    header .bar-icon{
+        display: block;
+    }
+    .close-bar-show{
+        display: block;
+    }
+    header{
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.203);
+    }
+    .bar-show{
+        top: 1.8cm;
+    }
+    .about{
+        grid-template-columns: 1fr;
+    }
+    .about img{
+        margin-bottom: 1cm;
+    }
+    .works{
+        width: 90%;
+    }
+    .contact{
+        grid-template-columns: 1fr;
+    }
+    .contact .right form{
+        width: 90%;
+    }
+}
+@media(max-width:640px){
+    .about .img{
+        text-align: center;
+    }
+    .offer{
+        grid-template-columns: 1fr 1fr;
+    }
+    .works{
+        grid-template-columns: 1fr;
+    }
+}
+@media(max-width:470px){
+    .about .threeboxes{
+        grid-template-columns: 1fr 1fr;
+    }
+    .more-works .close5{
+        margin-left: -.2cm;
+    }
+}
+@media(max-width:400px){
+    main{
+        width: 90%;
+    }
+    .about{
+        width: 90%;
+    }
+    .experience{
+        width: 90%;
+    }
+    .offer{
+        width: 90%;
+    }
+    .contact{
+        width: 90%;
+    }
+}
+/* ball media */
+@media(max-width:890px){
+    @keyframes ball1{
+        0%,100%{
+            left: 0;
+            top: 1.8cm;
+            color: red;
+        }
+        25%{
+            top: 15vh;
+            left: 30%;
+            transform: rotate(360deg);
+        }
+    }
+    @keyframes ball2{
+        0%,100%{
+            left: 0;
+            top: 1.8cm;
+            color: orange;
+        }
+        25%{
+            top: 25vh;
+            left: 27%;
+            transform: rotate(360deg);
+        }
+    }
+    @keyframes ball3{
+        0%,100%{
+            left: 0;
+            top: 1.8cm;
+            color: darkmagenta;
+        }
+        25%{
+            top: 35vh;
+            left: 15%;
+            transform: rotate(360deg);
+        }
+    }
+    @keyframes ball4{
+        0%,100%{
+            left: 0;
+            top: 1.8cm;
+            color: aqua;
+        }
+        25%{
+            top: 45vh;
+            left: 10%;
+            transform: rotate(360deg);
+        }
+    }
+}

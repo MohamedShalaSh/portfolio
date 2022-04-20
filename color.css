@@ -1,0 +1,105 @@
+.dark-mode{
+    background-color: rgb(229, 229, 229);
+    color: #000;
+}
+.dark-mode header{
+    background-color: #f3f3f3;
+    box-shadow: 0 1px 20px rgba(0, 0, 0, 0.441);
+}
+.dark-mode header ul a{
+    color: #000;
+}
+.dark-mode .aboutBTN{
+    background-color: rgba(255, 255, 255, 0.95);
+}
+.dark-mode .aboutBTN section{
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.639);
+}
+.dark-mode .about p{
+    color: rgb(106, 100, 100);
+}
+.dark-mode .product,
+.dark-mode .visual,
+.dark-mode .ui
+{
+    background-color: rgba(255, 255, 255, 0.95);
+}
+.dark-mode .product section,
+.dark-mode .visual section,
+.dark-mode .ui section{
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.639);
+}
+.dark-mode .product section .title p,
+.dark-mode .visual section .title p,
+.dark-mode .ui section .title p{
+    color: rgb(32, 32, 32);
+}
+.dark-mode .product p,
+.dark-mode .visual p,
+.dark-mode .ui p{
+    color: #000;
+}
+/* dark mode */
+.dark-mode .bar{
+    background-color: #f3f3f3;
+}
+.dark-mode .bar p .fa-angles-right{
+    color: #000;
+}
+.dark-mode .bar p .fa-angles-left{
+    color: #000;
+}
+.dark-mode .bar a:hover{
+    color:#000
+}
+/* HR */
+.dark-mode hr{
+    border: 3px solid #000;
+    background-color: #000;
+}
+.dark-mode .more-works{
+    background-color: #f3f3f3;
+}
+.dark-mode .more-works .title p{
+    color: rgb(39, 38, 38);
+}
+.dark-mode .footer{
+    background-color: #fff;
+}
+.dark-mode .more-works::-webkit-scrollbar{
+    background-color: #f3f3f3;
+}
+.dark-mode .contact .right form{
+    background-color: #fff;
+}
+.dark-mode form input,
+.dark-mode form textarea,
+.dark-mode form button{
+    background-color: #f3f3f3;
+    color: #000;
+}
+
+.dark-mode ::placeholder{
+    color: #000;
+}
+.dark-mode form button{
+    color: #000;
+}
+.dark-mode form button:hover{
+    background-color: #1454a8;
+    color: #fff;
+}
+.dark-mode footer{
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.164);
+}
+/* Up */
+.dark-mode .up{
+    color: #000;
+}
+.dark-mode .audio{
+    background-color: #000;
+    color: #fff;
+}
