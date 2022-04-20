@@ -861,7 +861,9 @@ footer iframe{
     border-radius: 10px;
 }
 footer p{
-    padding: 1cm;
+    padding: 1cm 0cm;
+    font-size:12px;
+    font-family: sans-serif;
 }
 .footer{
     height: 1.8cm;
