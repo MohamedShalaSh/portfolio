@@ -4,18 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Mohamed Shalash | Portfolio</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="color.css">
-    <link rel="icon" href="image/logo-icon-title.jpg">
+    <link rel="icon" href="image/15.jpg">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/js/all.js"></script>
 </head>
 <body class="body" id="body">
+    <!-- ================ SETTING ============== -->
+    <div class="setting">
+        <section>
+            <div id="nnn" class="setting-box">
+            <div class="s">
+                <p>Dark / Light Mode </p> 
+                <div id="btn-daark" class="btn-daark">
+                    <div id="btnf" class="btnf"></div>
+                </div>
+            </div>
+        </div>
+        <div id="row-setting" class="row-setting"><i id="kk" class="fa-solid fa-caret-right"></i></div>
+        </section>
+    </div>
 <!--========LOADING=============  -->
 <div class="loading">
     <p class="p1">Loading ... <i class="fa-solid fa-person-running"></i></p>
     <p class="p2"></p>
+</div>
+<!-- ==============ARE U BOT ============================== -->
+<div class="bot" id="bot">
+<div id="close6" class="close6"><i class="fa-solid fa-xmark"></i></div>
+<div class="n">
+    <p>تنبيه !</p>
+    <p>. يرجي التأكد انك لست بوت </p>
+    <p>: فقط اختر الصواب </p>
+    <p class="line">______________________</p>
+    <p class="q"> اي مما يأتي تفاحه </p>
+    <div class="photos">
+        <img id="orange" src="image/orange.jpg" alt="">
+        <img id="banana" src="image/banana.jpg" alt="">
+        <img id="apple" src="image/apple.jpg" alt="">
+        <img id="farwla" src="image/farwla.jpg" alt="">
+    </div>
+    <p id="msg"></p>
+    <a href="flog/more.html"><button id="secondPage" type="submit">go ...</button></a>
+</div>
 </div>
 <!-- ======================MORE PAGE WORKS WHEN CLICK BTN SHOW MORE============================ -->
 <div class="more-works" id="moreWorks">
@@ -175,16 +208,14 @@
             <li><a href="#5">Contact</a></li>
         </ul>
         <div class="mood-logo">
-            <div id="sun"><i class="fa-solid fa-sun-plant-wilt"></i></div>
-            <div id="moon"><i class="fa-solid fa-cloud-moon"></i></div>
             <p><span>M</span>ohameD <span class="s1"> !!</span></p>
         </div>
     </header>
 <!-- =========ANIMATION BALL======== -->
-<div class="ball ball1"><i class="fa-solid fa-heart"></i></div>
-<div class="ball ball2"><i class="fa-solid fa-face-grin-hearts"></i></div>
-<div class="ball ball3"><i class="fa-solid fa-head-side-cough"></i></div>
-<div class="ball ball4"><i class="fa-solid fa-disease"></i></div>
+<div class="ball ball1"><i class="fa-solid fa-heart"></i>o</div>
+<div class="ball ball2"><i class="fa-solid fa-face-grin-hearts"></i>O</div>
+<div class="ball ball3"><i class="fa-solid fa-head-side-cough"></i>o</div>
+<div class="ball ball4"><i class="fa-solid fa-disease"></i>M</div>
 <!--======================BAR====================-->
 <div class="bar">
     <img src="image/15.j" alt="">
@@ -215,7 +246,7 @@
     </div>
     <div class="items-right">
         <p id="audioo" class="audio">Music</p>
-        <audio id="audio" src="music.m4a" controls autoplay preload="auto" loop></audio>
+        <audio id="audio" src="music.m4a" controls preload="auto" loop></audio>
         <i class="fa-solid fa-music"></i>
     </div>
 </div>
@@ -250,9 +281,24 @@
         <a href="#5"><button type="submit">Contact Me <i class="fa-solid fa-right-long"></i></button></a>
 </div>
 </div>
-<hr id="2">
+<hr id="">
 <!-- ================================================================================ -->
+<!-- ==================================SLIDE============================================== -->
+<div class="slide" id="slide">
+    <a href="#m1"><div id="Rarrow" class="arrow-left-slide arrow-slide"><i class="fa-solid fa-angle-left"></i></div></a>
+    <img id="m1" src="image/css.jpg" alt="">
+    <img src="image/html.jpg" alt="">
+    <img src="image/css.jpg" alt="">
+    <img src="image/js.jpg" alt="">
+    <img src="image/html.jpg" alt="">
+    <img src="image/css.jpg" alt="">
+    <img src="image/js.jpg" alt="">
+    <img id="m2" src="image/html.jpg" alt="">
+    <a class="a" href="#m2"><div id="Larrow" class="arrow-right-slide arrow-slide"><i class="fa-solid fa-angle-right"></i></div></a>
+</div>
+<hr id="2">
 <!-- ===============================EXPERIENCE PAGE ================================= -->
+<!-- ================================================================================ -->
 <div class="experience-title"><i class="fa-solid fa-angles-left"></i><h3>My Experience</h3><i class="fa-solid fa-angles-right"></i></div>
 <!-- MAKE BY BOOTsTRAP PROGRESS-->
 <div class="experience">
@@ -350,44 +396,45 @@
 </div>
 <div class="works">
     <section class="web">
-        <img src="image/4.jpg" alt="">
-        <p class="p1">Amazon</p>
+        <img src="image/1.jpg" alt="">
+        <p class="p1">Fresh food</p>
         <a class="a-view" href=""><p class="p2">View <i class="fa-solid fa-right-long"></i></p></a>
     </section>
     <section class="app">
-        <img src="image/8.jpg" alt="">
-        <p class="p1">MCQ html</p>
+        <img src="image/2.jpg" alt="">
+        <p class="p1">Food </p>
         <a class="a-view" href=""><p class="p2">View <i class="fa-solid fa-right-long"></i></p></a>
     </section>
     <section class="web">
-        <img src="image/b3.jfif" alt="">
-        <p class="p1">Foods 1</p>
+        <img src="image/3.jpg" alt="">
+        <p class="p1">Amazon</p>
         <a class="a-view" href=""><p class="p2">View <i class="fa-solid fa-right-long"></i></p></a>
     </section>
     <section class="web">
-        <img src="image/1.jpg" alt="">
-        <p class="p1">Foods 2</p>
+        <img src="image/4.jpg" alt="">
+        <p class="p1">MCQ quastion</p>
         <a class="a-view" href=""><p class="p2">View <i class="fa-solid fa-right-long"></i></p></a>
     </section>
     <section class="web">
-        <img src="image/1.jpg" alt="">
-        <p class="p1">Foods 2</p>
+        <img src="image/5.jpg" alt="">
+        <p class="p1">Loagin Page</p>
         <a class="a-view" href=""><p class="p2">View <i class="fa-solid fa-right-long"></i></p></a>
     </section>
     <section class="web">
-        <img src="image/1.jpg" alt="">
-        <p class="p1">Foods 2</p>
+        <img src="image/6.jpg" alt="">
+        <p class="p1">Egypest</p>
         <a class="a-view" href=""><p class="p2">View <i class="fa-solid fa-right-long"></i></p></a>
     </section>
 </div>
 <div class="btn-work-page">
-    <button id="btnWork" type="submit">Show more ...</button>
+        <button id="btnWork" type="submit">Show more ...</button>
+</div>
+<!-- ========================VIDEO IN PAGE ======= -->
+<div class="recent-works">
+    <p>What's my last Work !! - Show this video </p>
+    <video controls autoplay loop="" muted ="" src="video/fresh-food.mp4"></video>
 </div>
 <hr id="5">
-<!-- ==================================SLIDE============================================== -->
-<div class="slide">
-
-</div>
 <!-- ================================CONTACT===================================== -->
 <div class="contact-title"><i class="fa-solid fa-angles-left"></i><h3>Contact Me</h3><i class="fa-solid fa-angles-right"></i></div>
 <div class="contact">
@@ -413,12 +460,17 @@
     </div>
 </div>
 <hr>
+<!-- the links to second mohamed page -->
+<div class="secondpages">
+    <p>Don't forget to visit Mohamed's entertainment page  <i class="fa-solid fa-arrow-trend-up"></i></p>
+    <button id="tobot">Click to go ...</button>
+</div>
 <!-- ==============FOOTER============================== -->
 <footer >
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54837.47601582538!2d31.03437610285248!3d30.79303509357969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f7c95daafcf035%3A0x7421820c5e8cae42!2z2LfZhti32KfYjCDYt9mG2LfYpyAo2YLYs9mFIDIp2Iwg2YXYsdmD2LIg2LfZhti32KfYjCDYp9mE2LrYsdio2YrYqQ!5e0!3m2!1sar!2seg!4v1650419021201!5m2!1sar!2seg" width="600" height="450" style="border:0;"
 allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 <br>
-    <p>All Right Resverd || Mohamed ShalaSh &copy 2022</p>
+    <p>All Right Resverd || Mohamed ShalaSh  &copy 2022</p>
 </footer>
 <script src="main.js"></script>
 <script src="js/popper.min.js"></script>
